@@ -1,0 +1,10 @@
+--- 
+- hosts: all
+  become: yes
+  connection: ssh
+  gather_facts: yes
+  tasks: 
+    - name: configure Docker 
+      yum_repository: 
+       baseurl: https://download.docker.com/linux/centos/7/x86_64/stable
+       
