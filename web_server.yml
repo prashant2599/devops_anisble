@@ -6,7 +6,7 @@
   tasks: 
     - name: configure Docker 
       yum_repository: 
-       baseurl: https://download.docker.com/linux/centos/7/x86_64/stable
+       baseurl: "https://download.docker.com/linux/centos/7/x86_64/stable"
     - name: Docker Package
       package:
        name:
