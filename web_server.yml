@@ -3,7 +3,6 @@
   become: yes
   connection: ssh
   gather_facts: yes
-<<<<<<< HEAD
   tasks:
     - name: Add Signing Key 
       ansible.builtin.rpm_key:
